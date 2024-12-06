@@ -1,0 +1,313 @@
+/* -------------------- IMPORTED FONTS -------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
+
+/* -------------------- ROOT VARIABLES --------------------------------------- */
+:root {
+  --teal: #4CA7C0;
+  --purple: #484FB7;
+  --lavender: #6B8FE7;
+  --yellow: #E9BB57;
+  --pink: #D9526F;
+  --dark-gray: #1E1E1E;
+  --white: #ffffff;
+
+  --font-primary: 'Inter', sans-serif;
+  --font-secondary: 'Kavoon', cursive;
+
+  --h1-size: 3em;
+  --nav-h2-size: 1.5em;
+  --h2-size: 2em;
+  --h3-size: 1.5em;
+  --h4-size: 1.15em;
+}
+
+/* Imported Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--dark-gray); 
+    margin: 0;
+    padding: 0;
+    background-color: var(--purple);
+}
+
+h1, h2 {
+    font-family: 'Kavoon', cursive;
+}
+header {
+    background-color: var(--lavender);
+    position: relative;
+    padding-top: 5em;
+    padding-bottom: 2em;
+    text-align: center;
+}
+header h1 {
+    font-size: 3em;
+    color: var(--white);
+    background-color: var(--lavender);
+    text-align: center;
+    margin: 0;
+    padding: 0.5 0;
+}
+
+.subtitle {
+    text-align: center;
+    color: var(--white);
+    background-color: var(--pink);
+    padding: 0.5em 1em;
+    font-size: 1.2em;
+    margin-top: 1em;
+    border-radius: 8px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-top: 1.5em;
+    text-align: center;
+    color: var(--white);
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    color: var(--purple);
+}
+
+h4 {
+    font-size: 1.15em;
+    margin-bottom: 0.5em;
+    color: var(--dark-gray);
+}
+
+/* Navigation FIX ME AFTER */
+header nav {
+    background-color: var(--yellow);
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    padding: 0.5em 1em;
+    border-radius: 8px;
+}
+
+header nav ul {
+    color: var(--yellow);
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    font-size: 1.5em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--dark-gray);
+    font-weight: bold;
+    padding: 0.3em 0.7em;
+    border-radius: 4px;
+    font-size: 0.9em;
+    transition: color 0.3s;
+}
+
+
+/* Section Styles */
+section {
+    padding: 2em 1em;
+}
+
+.service-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+    margin-top: 1.5em;
+}
+
+.service-card {
+    width: 300px;
+    background-color: var(--white);
+    border: 1px solid var(--lavender);
+    border-radius: 8px;
+    padding: 1.5em;
+    text-align: center;
+}
+
+.service-card img {
+    width: 50px;
+    margin-bottom: 1em;
+}
+
+.service-card h4 {
+    color: var(--purple);
+}
+
+.service-card p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+/* Section Subtitle */
+.section-subtitle {
+    color: var(--yellow); 
+    font-size: 1.2em; 
+    text-align: center; 
+    margin-top: 0.5em;
+    margin-bottom: 1.5em; 
+}
+/* Highlight Cards */
+#why-choose-us {
+    background-color: var(--pink); 
+    padding: 2em 1em; 
+    text-align: center; 
+    color: var(--white); 
+}
+
+.highlight-cards {
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+    margin: 2em 0;
+}
+
+.highlight-cards div {
+    background-color: var(--teal);
+    color: var(--dark-gray);
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 2em 2em;
+    border-radius: 4px;
+    text-align: center;
+}
+
+/* Pricing Tables */
+.pricing-tables {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+    margin-top: 1.5em;
+}
+
+table {
+    border-collapse: collapse;
+    width: 280px;
+    text-align: left;
+    background-color: var(--white);
+    border: 1px solid;
+    border-radius: 8px;
+}
+
+caption {
+    background-color: var(--purple);
+    color: var(--yellow);
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 0.5em;
+    text-align: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+th, td {
+    padding: 0.75em;
+    border: 1.5px solid var(--yellow);
+}
+
+th {
+    background-color: var(--yellow);
+    color: var(--dark-gray);
+}
+
+td {
+    font-size: 1em;
+    color: var(--dark-gray);
+}
+
+/* Call to Action */
+#cta {
+    text-align: center;
+    padding: 3em 1em;
+    background-color: var(--pink);
+    color: var(--white);
+}
+
+#cta h2{
+    text-align: left;
+}
+
+#cta p {
+    text-align: left;
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+}
+
+.cta-button {
+    background-color: var(--white);
+    color: var(--dark-gray);
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 0.75em 2em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: var(--lavender);
+    color: var(--white);
+}
+
+footer a {
+    color: var(--white);
+    text-decoration: underline;
+    margin-left: 1em;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+/*-------------------- MEDIA QUERY (medium) --------------------------------*/
+@media (min-width: 768px) {
+    header p {
+      font-size: 1.2rem;
+    }
+  
+    .service-grid,
+    .benefits-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /*-------------------- MEDIA QUERY (large) ------------------------------------*/
+  @media (min-width: 1024px) {
+    header p {
+      font-size: 1.4rem;
+    }
+  
+    .service-grid,
+    .benefits-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  /*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
+  @media (min-width: 1440px) {
+    header p {
+      font-size: 1.5rem;
+    }
+  
+    .service-grid,
+    .benefits-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
